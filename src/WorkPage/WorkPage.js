@@ -4,6 +4,7 @@ export const WorkPage = () => {
 return (
     <div className='work-page-container'>
         <h1>Work History 👨‍💻</h1>
+        
         <h3>Software Engineer @ Bank OZK <span className='smaller'>(Sep 2019 to Current)</span></h3>
         <p><span className="word-highlight">Relevant Tech:</span> Typescript, React, Node, Express, Koa, SQL, C#, .Net Core, HTML/CSS</p>
         <p>
