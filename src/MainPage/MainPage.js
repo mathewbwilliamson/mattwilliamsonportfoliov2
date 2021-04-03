@@ -3,7 +3,7 @@ import './MainPage.css';
 
 export const MainPage = () => {
 return (
-    <div className='main-container'>
+    <div className='main-page-container'>
         <h1>Hi, I'm Matt 👋</h1>
         <p>I'm currently exploring new opportunities and side projects.</p>
         <p>I've been front-end developer, a mobile front-end developer, and a backend developer.</p>

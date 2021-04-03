@@ -4,7 +4,7 @@
 :root {
   --main-black: hsl(258deg, 6%, 11%);
   --off-gray: hsl(258deg, 6%, 30%);
-  --light-gray: hsl(270deg, 76%, 80%);
+  --light-lavender: hsl(270deg, 76%, 80%);
   --background: hsl(320, 76%, 97%);
   --app-lavender: hsl(270deg, 76%, 64%);
 }
@@ -19,12 +19,28 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 3.3rem;
+  color: var(--main-black);
+  background-color: var(--light-lavender);
+  width: fit-content;
+  padding: 0 10px;
+  margin-left: -10px;
+  line-height: 5.4rem;
 }
 
 h2 {
   font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+  padding-top: 1.7rem;
 }
 
 a {
@@ -50,15 +66,6 @@ h2 a:hover {
   outline: none;
 }
 
-h1 {
-  font-size: 3.3rem;
-  color: var(--main-black);
-  background-color: var(--app-lavender);
-  width: fit-content;
-  padding: 0 10px;
-  margin-left: -10px;
-}
-
 p,
 a {
   font-size: 1.4rem;
@@ -70,15 +77,30 @@ a {
   font-weight: 600;
 }
 
+p a {
+  display: inline;
+  color: var(--app-lavender);
+}
+
 .word-highlight {
-  background-color: var(--light-gray);
+  background-color: var(--light-lavender);
   font-weight: 600;
   padding-left: 8px;
   padding-right: 8px;
 }
 
+.smaller {
+  font-size: 1.1rem;
+}
+
 .main-container {
   max-width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
