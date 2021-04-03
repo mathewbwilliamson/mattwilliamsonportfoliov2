@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
+:root {
+  --main-black: hsl(258deg, 6%, 11%);
+  --off-gray: hsl(258deg, 6%, 30%);
+  --light-gray: hsl(270deg, 76%, 80%);
+  --background: hsl(320, 76%, 97%);
+  --app-lavender: hsl(270deg, 76%, 64%);
+}
+
 * {
   font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: hsl(320, 76%, 97%);
+  background-color: var(--background);
 }
 
 h1,
@@ -18,24 +27,33 @@ h2 {
   font-size: 2rem;
 }
 
+a {
+  align-items: center;
+  display: flex;
+  padding: 2px;
+  text-decoration: none;
+  color: var(--main-black);
+}
+
+a:hover {
+  outline: 2px dashed var(--app-lavender);
+  color: var(--off-gray);
+}
+
 h2 a {
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: hsl(258deg, 6%, 11%);
-}
-
-a:hover {
-  border: 2px dashed hsl(270deg, 76%, 64%);
+h2 a:hover {
+  color: initial;
+  outline: none;
 }
 
 h1 {
   font-size: 3.3rem;
-  color: hsl(258deg, 6%, 11%);
-  background-color: hsl(270deg, 76%, 64%);
+  color: var(--main-black);
+  background-color: var(--app-lavender);
   width: fit-content;
   padding: 0 10px;
   margin-left: -10px;
@@ -53,7 +71,7 @@ a {
 }
 
 .word-highlight {
-  background-color: hsl(270deg, 76%, 80%);
+  background-color: var(--light-gray);
   font-weight: 600;
   padding-left: 8px;
   padding-right: 8px;

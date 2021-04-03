@@ -4,3 +4,13 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.link-container {
+  display: flex;
+  align-items: center;
+}
+
+.link-container a {
+  margin: 0 5px;
+  padding: 6px;
+}
